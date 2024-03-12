@@ -31,8 +31,9 @@ app.get('/manifest.json', async (req, res) => {
     res.send(await fs.readFile(`.${req.path}`))
 })
 
-https.createServer({
-    cert: fs_.readFileSync('./cert.pem'),
-    key: fs_.readFileSync('./key.pem'),
-    passphrase: '1234'
-}, app).listen(8080)
+///https.createServer({
+///    cert: fs_.readFileSync('./cert.pem'),
+///    key: fs_.readFileSync('./key.pem'),
+///    passphrase: '1234'
+///}, app).listen(8080)
+app.listen(8080)
