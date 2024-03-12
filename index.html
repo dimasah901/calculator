@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="font/style.css">
+    <script src="./bundle.js"></script>
+    <link rel="manifest" href="manifest.json">
+    
+</head>
+<body>
+    <div id="prefabs">
+        <div prefab="function">
+            <span class="material-symbols-rounded warning" style="display: none;">
+                warning
+            </span>
+            <span class="material-symbols-rounded">
+                function
+            </span>
+            <span class="fname" contenteditable="true"></span><a class="fstartargs">(</a><span class="fargs"
+                contenteditable="true"></span><a class="fendargs">)</a><a>=</a><span class="fcode"
+                contenteditable="true"></span>
+        </div>
+    </div>
+    <div id="tabs">
+        <md-filled-tonal-button class="rectb" onclick="switchScreen('calc')">
+            <span slot="icon">calculate</span>
+        </md-filled-tonal-button>
+        <md-filled-tonal-button class="rectb" onclick="switchScreen('graph')">
+            <span slot="icon">function</span>
+        </md-filled-tonal-button>
+        <md-filled-tonal-button class="rectb" onclick="installprompt.prompt()">
+            <span slot="icon">download</span>
+        </md-filled-tonal-button>
+    </div>
+    <div id="tab">
+        <div id="calculator" class="current">
+            <div id="calc">
+                <a id="old"></a>
+                <a id="current"></a>
+                <div id="buttons">
+                    <div>
+                        <md-filled-button onclick="calculator.action(7)"> AC </md-filled-button>
+                        <md-filled-tonal-button onclick="calculator.action(6)"> ( ) </md-filled-tonal-button>
+                        <md-filled-tonal-button onclick="calculator.action(5)"> % </md-filled-tonal-button>
+                        <md-filled-tonal-button onclick="calculator.action(4)"> ÷ </md-filled-tonal-button>
+                    </div>
+                    <div>
+                        <md-elevated-button onclick="calculator.type('7')"> 7 </md-elevated-button>
+                        <md-elevated-button onclick="calculator.type('8')"> 8 </md-elevated-button>
+                        <md-elevated-button onclick="calculator.type('9')"> 9 </md-elevated-button>
+                        <md-filled-tonal-button onclick="calculator.action(3)"> × </md-filled-tonal-button>
+                    </div>
+                    <div>
+                        <md-elevated-button onclick="calculator.type('4')"> 4 </md-elevated-button>
+                        <md-elevated-button onclick="calculator.type('5')"> 5 </md-elevated-button>
+                        <md-elevated-button onclick="calculator.type('6')"> 6 </md-elevated-button>
+                        <md-filled-tonal-button onclick="calculator.action(2)"> − </md-filled-tonal-button>
+                    </div>
+                    <div>
+                        <md-elevated-button onclick="calculator.type('1')"> 1 </md-elevated-button>
+                        <md-elevated-button onclick="calculator.type('2')"> 2 </md-elevated-button>
+                        <md-elevated-button onclick="calculator.type('3')"> 3 </md-elevated-button>
+                        <md-filled-tonal-button onclick="calculator.action(1)"> + </md-filled-tonal-button>
+                    </div>
+                    <div>
+                        <md-elevated-button onclick="calculator.type('0')"> 0 </md-elevated-button>
+                        <md-elevated-button onclick="calculator.type('.')"> . </md-elevated-button>
+                        <md-filled-button onclick="calculator.action(8)"> <span slot="icon">backspace</span> </md-filled-button>
+                        <md-filled-button onclick="calculator.action(9)"> = </md-filled-button>
+                    </div>
+
+                </div>
+            </div>
+            <div id="history">
+                
+            </div>
+        </div>
+        <div id="graph">
+            <canvas id="canvasgraph"></canvas>
+            <div id="functions">
+                
+            </div>
+        </div>
+        
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

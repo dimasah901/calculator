@@ -1,0 +1,486 @@
+@font-face {
+    font-family: 'Product Sans Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: url('/font/ProductSans-Regular.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Product Sans Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: url('/font/ProductSans-Italic.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Product Sans Thin Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: url('/font/ProductSans-Thin.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Product Sans Light Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: url('/font/ProductSans-Light.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Product Sans Medium Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: url('/font/ProductSans-Medium.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Product Sans Black Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: url('font/ProductSans-Black.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Product Sans Thin Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: url('/font/ProductSans-ThinItalic.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Product Sans Light Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: url('/font/ProductSans-LightItalic.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Product Sans Medium Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: url('/font/ProductSans-MediumItalic.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Product Sans Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: url('/font/ProductSans-Bold.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Product Sans Bold Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: url('/font/ProductSans-BoldItalic.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Product Sans Black Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: url('/font/ProductSans-BlackItalic.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Material Symbols Rounded';
+    font-style: normal;
+    font-weight: 100 700;
+    src: url('/font/icons.woff2') format('woff2');
+}
+
+.material-symbols-rounded, span[slot="icon"] {
+    font-family: 'Material Symbols Rounded';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    -webkit-font-feature-settings: 'liga';
+    -webkit-font-smoothing: antialiased;
+}
+
+.material-symbols-rounded, span[slot="icon"] {
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24
+}
+
+*:not(.material-symbols-rounded) {
+    font-family: "Product Sans Regular";
+    font-size: 17px;
+    font-weight: 600;
+    --_content-font: "Product Sans Regular";
+}
+md-outlined-text-field {
+    --md-outlined-text-field-input-text-font: "Product Sans Regular" !important;
+}
+.rectb {
+    width: 50px;
+    height: 50px;
+    --md-filled-tonal-button-container-shape: 12px;
+}
+span[slot="icon"] {
+    font-size: 26px;
+    transform: translate(3px, -4px);
+}
+
+
+body {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    --md-sys-color-primary: #113800;
+    --md-sys-color-primary-container: #113800;
+    --md-sys-color-secondary: #283420;
+    --md-sys-color-secondary-container: #283420;
+    --md-sys-color-tertiary: #003738;
+    --md-sys-color-tertiary-container: #003738;
+}
+
+#tabs {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    padding-top: calc(50vh - 80px);
+    height: 100%;
+    width: 50px;
+    background-color: #222222;
+}
+
+
+#tabs > * {
+    margin-bottom: 5px;
+}
+
+#tab {
+    position: absolute;
+    top: 0;
+    left: 60px;
+    padding: 5px 10px 5px 5px;
+    height: 100%;
+    width: calc(100% - 60px);
+    background-color: #303030;
+}
+
+#buttons {
+    position: absolute;
+    top: 87px;
+    width: calc(100% - 10px);
+    height: calc(100% - 25px - 10px);
+    padding: 5px;
+}
+#buttons > div {
+    margin-bottom: 10px;
+    width: 100%;
+    height: calc(20% - 22.5px);
+}
+#buttons > div > * {
+    width: calc(25% - 11.25px);
+    height: 100%;
+    margin-right: 5px;
+}
+#calculator.current>div>#old {
+    opacity: 0;
+}
+#calculator.current>div>#current {
+    position: absolute;
+    left: 20px;
+    top: 5px;
+    font-size: 60px;
+    color: #fff;
+    font-weight: 600;
+}
+#calculator>div>#old, #calculator>div>#current {
+    transition: 0.25s;
+    width: 400px;
+    overflow-x:auto;
+}
+#calculator>div>#current {
+    position: absolute;
+    left: 20px;
+    top: 10px;
+    font-size: 20px;
+    color: #aaa;
+    font-weight: 600;
+    white-space: nowrap;
+}
+#calculator>div>#old {
+    position: absolute;
+    left: 20px;
+    top: 27px;
+    font-size: 50px;
+    color: #fff;
+    font-weight: 600;
+    white-space: nowrap;
+}
+#calculator {
+    position: absolute; /* Калькулятор (вкладка) имеет абсолютное положение */
+    width: 100%; /* Калькулятор (вкладка) заполнит все горизонтальное пространство */
+    height: 100%; /* Калькулятор (вкладка) заполнит все вертикальное пространство */
+    left: 0; /* Калькулятор (вкладка) заполнит все горизонтальное пространство */
+    top: 0; /* Калькулятор (вкладка) заполнит все вертикальное пространство */
+}
+#calc {
+    position: absolute; /* Калькулятор имеет абсолютное положение */
+    width: min(500px, 100%); /* Ширина калькулятора будет ограничена 500 пикселями */
+    height: min(min(100vw, 690px), calc(100% - 10px)); /* Ширина калькулятора будет ограничена 690 пикселями и высотой страницы - 10 пикселей */
+    left: calc(calc(50% - max(150px, 15%)) - min(250px, 50%)); /* Калькулятор будет расположен по центру его горизонтального пространства */
+    top: calc(50% - calc(min(650px, calc(100% - 10px)) / 2)); /* Калькулятор будет расположен по центру его вертикального пространства */
+}
+@media only screen and (max-width: 900px) {
+    #history {
+        visibility: hidden;
+    }
+    #calc {
+        left: calc(calc(50%) - min(250px, 50%));
+    }
+}
+#history {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: max(300px, 30%);
+    height: 100%;
+    background-color: #222;
+}
+.historyItem {
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+.historyItem > button {
+    font-size: 24px;
+    color: #fff;
+    font-weight: 600;
+    white-space: nowrap;
+    width: 100%;
+    text-align: left;
+    background-color: transparent;
+    border: none;
+}
+.historyItem>button.result {
+    
+}
+.historyItem>button.input {
+    
+}
+
+#calculator>div>#old {
+    position: absolute;
+    left: 20px;
+    top: 27px;
+    font-size: 50px;
+    color: #fff;
+    font-weight: 600;
+    white-space: nowrap;
+}
+*/
+
+
+#calculator > div > #buttons > div > * {
+    font-size: 28px;
+    font-weight: 500;
+    overflow: visible;
+}
+
+/* Hide tabs */
+@media only screen and (max-width: 70vh) {
+    #tabs {
+        display: none;
+    }
+
+    #tab {
+        left: 0px;
+        width: 100%;
+    }
+
+    #calculator {
+        position: absolute;
+        width: min(500px, 100%);
+        height: calc(25vw * 5.5);
+        left: calc(50% - min(250px, 50%));
+        top: calc(calc(calc(100% - calc(25vw * 5.5)) / 2));
+    }
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+    border: #333 solid 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+.notification {
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+    --md-filled-tonal-button-container-color: var(--md-sys-color-on-error);
+    --md-filled-tonal-button-label-text-color: rgb(237 220 255);
+    width: auto;
+    height: 50px;
+    border-radius: 15px;
+}
+
+@keyframes notificationShow {
+    75% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+.notification.show {
+    animation: notificationShow 2s forwards;
+}
+
+body {
+    --md-sys-color-primary: rgb(153 204 250);
+    --md-sys-color-surface-tint: rgb(153 204 250);
+    --md-sys-color-on-primary: rgb(0 51 82);
+    --md-sys-color-primary-container: rgb(9 74 114);
+    --md-sys-color-on-primary-container: rgb(205 229 255);
+    --md-sys-color-secondary: rgb(184 200 218);
+    --md-sys-color-on-secondary: rgb(35 50 64);
+    --md-sys-color-secondary-container: rgb(57 72 87);
+    --md-sys-color-on-secondary-container: rgb(212 228 246);
+    --md-sys-color-tertiary: rgb(210 191 231);
+    --md-sys-color-on-tertiary: rgb(56 42 74);
+    --md-sys-color-tertiary-container: rgb(79 64 97);
+    --md-sys-color-on-tertiary-container: rgb(237 220 255);
+    --md-sys-color-error: rgb(255 180 171);
+    --md-sys-color-on-error: rgb(105 0 5);
+    --md-sys-color-error-container: rgb(147 0 10);
+    --md-sys-color-on-error-container: rgb(255 218 214);
+    --md-sys-color-background: rgb(16 20 24);
+    --md-sys-color-on-background: rgb(224 226 232);
+    --md-sys-color-surface: rgb(16 20 24);
+    --md-sys-color-on-surface: rgb(224 226 232);
+    --md-sys-color-surface-variant: rgb(66 71 78);
+    --md-sys-color-on-surface-variant: rgb(194 199 206);
+    --md-sys-color-outline: rgb(140 145 152);
+    --md-sys-color-outline-variant: rgb(66 71 78);
+    --md-sys-color-shadow: rgb(0 0 0);
+    --md-sys-color-scrim: rgb(0 0 0);
+    --md-sys-color-inverse-surface: rgb(224 226 232);
+    --md-sys-color-inverse-on-surface: rgb(45 49 53);
+    --md-sys-color-inverse-primary: rgb(45 98 139);
+    --md-sys-color-primary-fixed: rgb(205 229 255);
+    --md-sys-color-on-primary-fixed: rgb(0 29 50);
+    --md-sys-color-primary-fixed-dim: rgb(153 204 250);
+    --md-sys-color-on-primary-fixed-variant: rgb(9 74 114);
+    --md-sys-color-secondary-fixed: rgb(212 228 246);
+    --md-sys-color-on-secondary-fixed: rgb(13 29 42);
+    --md-sys-color-secondary-fixed-dim: rgb(184 200 218);
+    --md-sys-color-on-secondary-fixed-variant: rgb(57 72 87);
+    --md-sys-color-tertiary-fixed: rgb(237 220 255);
+    --md-sys-color-on-tertiary-fixed: rgb(34 21 51);
+    --md-sys-color-tertiary-fixed-dim: rgb(210 191 231);
+    --md-sys-color-on-tertiary-fixed-variant: rgb(79 64 97);
+    --md-sys-color-surface-dim: rgb(16 20 24);
+    --md-sys-color-surface-bright: rgb(54 57 62);
+    --md-sys-color-surface-container-lowest: rgb(11 15 18);
+    --md-sys-color-surface-container-low: rgb(24 28 32);
+    --md-sys-color-surface-container: rgb(28 32 36);
+    --md-sys-color-surface-container-high: rgb(39 42 46);
+    --md-sys-color-surface-container-highest: rgb(49 53 57);
+}
+
+.function {
+    border-radius: 12px;
+    width: calc(100%-20px);
+    height: 30px;
+    border: #fff 1px solid;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    white-space: nowrap;
+    margin-bottom: 15px;
+}
+.function > a {
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.function > span.material-symbols-rounded {
+    color: white;
+    font-size: 30px;
+    margin-right: 10px;
+}
+.function>span.material-symbols-rounded.warning {
+    color: red;
+}
+span.fname {
+    height: 25px;
+    width: max-content;
+    padding-right: 10px;
+    margin-right: -10px;
+    white-space: nowrap;
+    margin-top: 5px;
+}
+span.fargs {
+    height: 25px;
+    width: max-content;
+    padding-right: 10px;
+    margin-right: -10px;
+    white-space: nowrap;
+    margin-top: 5px;
+}
+span.fcode {
+    height: 25px;
+    width: 100%;
+    white-space: nowrap;
+    margin-top: 5px;
+}
+span.fname, span.fargs, span.fcode {
+    outline: none !important;
+}
+a, span.material-symbols-rounded {
+    user-select: none;
+}
+/* {
+    outline: 2px purple solid;
+}*/
+#canvasgraph {
+    width: calc(100% - max(30%, 200px) - 40px);
+    height: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    background-color: white;
+}
+#functions {
+    width: max(calc(30% - 10px), 200px);
+    position: absolute;
+    top: 20px;
+    right: 28px;
+}
+#prefabs {
+    display: none;
+}
