@@ -302,7 +302,7 @@ let graph = {
             graph.ctx.stroke();
             graph.ctx.strokeStyle = 'black'
             graph.ctx.font = '15px sans-serif'
-            graph.ctx.fillText(`${highlight.function}, x=${highlight.cx}, y=${highlight.cy}`, highlight.x + 10, highlight.y + 10)
+            graph.ctx.fillText(`${highlight.function}, x=${highlight.cx.toPrecision(5)}, y=${highlight.cy.toPrecision(5)}`, highlight.x + 10, highlight.y + 10)
         }
         graph.ctx.font = '20px sans-serif'
         graph.ctx.fillText(graph.view.scale, graph.canvas.width - 50, graph.canvas.height - 50)
