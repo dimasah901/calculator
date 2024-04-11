@@ -2,91 +2,91 @@
     font-family: 'Product Sans Regular';
     font-style: normal;
     font-weight: normal;
-    src: url('/font/ProductSans-Regular.woff') format('woff');
+    src: url('./font/ProductSans-Regular.woff') format('woff');
 }
 
 @font-face {
     font-family: 'Product Sans Italic';
     font-style: normal;
     font-weight: normal;
-    src: url('/font/ProductSans-Italic.woff') format('woff');
+    src: url('./font/ProductSans-Italic.woff') format('woff');
 }
 
 @font-face {
     font-family: 'Product Sans Thin Regular';
     font-style: normal;
     font-weight: normal;
-    src: url('/font/ProductSans-Thin.woff') format('woff');
+    src: url('./font/ProductSans-Thin.woff') format('woff');
 }
 
 @font-face {
     font-family: 'Product Sans Light Regular';
     font-style: normal;
     font-weight: normal;
-    src: url('/font/ProductSans-Light.woff') format('woff');
+    src: url('./font/ProductSans-Light.woff') format('woff');
 }
 
 @font-face {
     font-family: 'Product Sans Medium Regular';
     font-style: normal;
     font-weight: normal;
-    src: url('/font/ProductSans-Medium.woff') format('woff');
+    src: url('./font/ProductSans-Medium.woff') format('woff');
 }
 
 @font-face {
     font-family: 'Product Sans Black Regular';
     font-style: normal;
     font-weight: normal;
-    src: url('font/ProductSans-Black.woff') format('woff');
+    src: url('./font/ProductSans-Black.woff') format('woff');
 }
 
 @font-face {
     font-family: 'Product Sans Thin Italic';
     font-style: normal;
     font-weight: normal;
-    src: url('/font/ProductSans-ThinItalic.woff') format('woff');
+    src: url('./font/ProductSans-ThinItalic.woff') format('woff');
 }
 
 @font-face {
     font-family: 'Product Sans Light Italic';
     font-style: normal;
     font-weight: normal;
-    src: url('/font/ProductSans-LightItalic.woff') format('woff');
+    src: url('./font/ProductSans-LightItalic.woff') format('woff');
 }
 
 @font-face {
     font-family: 'Product Sans Medium Italic';
     font-style: normal;
     font-weight: normal;
-    src: url('/font/ProductSans-MediumItalic.woff') format('woff');
+    src: url('./font/ProductSans-MediumItalic.woff') format('woff');
 }
 
 @font-face {
     font-family: 'Product Sans Bold';
     font-style: normal;
     font-weight: normal;
-    src: url('/font/ProductSans-Bold.woff') format('woff');
+    src: url('./font/ProductSans-Bold.woff') format('woff');
 }
 
 @font-face {
     font-family: 'Product Sans Bold Italic';
     font-style: normal;
     font-weight: normal;
-    src: url('/font/ProductSans-BoldItalic.woff') format('woff');
+    src: url('./font/ProductSans-BoldItalic.woff') format('woff');
 }
 
 @font-face {
     font-family: 'Product Sans Black Italic';
     font-style: normal;
     font-weight: normal;
-    src: url('/font/ProductSans-BlackItalic.woff') format('woff');
+    src: url('./font/ProductSans-BlackItalic.woff') format('woff');
 }
 
 @font-face {
     font-family: 'Material Symbols Rounded';
     font-style: normal;
     font-weight: 100 700;
-    src: url('/font/icons.woff2') format('woff2');
+    src: url('./font/icons.woff2') format('woff2');
 }
 
 .material-symbols-rounded, span[slot="icon"] {
